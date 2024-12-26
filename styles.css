@@ -228,36 +228,130 @@ body {
   .menu-icon{
     display: none;
   }
-  /*------ Media Query for navbar ---------*/
-  @media only screen and (max-width: 600px){
-    nav ul{
-      position: absolute;
-      width: 100%;
-      background: #000;
-      color: #fff;
-      left: 0;
-      top: 100%;
-      text-align: center;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.5s;
-    }
-    .nav-btn{
-      display: none;
-
-    }
-    nav .logo{
-      width: 150px;
-
-    }
-    nav ul li{
-      margin: 10px;
-      font-size: 14px;
-    }
-    .menu-icon{
-      display: none;
-    }
+  /*============Media queries for navbar===============*/
+@media only screen and (max-with: 600px){
+  nav ul{
+    position: absolute;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    left: 0;
+    top: 100%;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
   }
+  .nav-btn{
+    display: none;
+  }
+  nav .logo{
+    width: 150px;
+  }
+  nav ul li{
+    margin: 10px;
+    font-size: 14px;
+  }
+  .menu-icon{
+    display: block;
+    width: 30px;
+  }
+  .show-menu{
+    max-height: 60px;
+  }
+}
+/*88888888888***Media queries for header content***888888*/
+@media only screen and (max-width: 600px){
+  .header{
+    min-height: 0;
+    padding: 0;
+  }
+  .ranger-img{
+    width: 100%;
+    right: auto;
+    position: relative;
+    margin-top: 100px;
+  }
+  .header-content{
+    position: absolute;
+    bottom: 0;
+    padding: 0 10%;
+    z-index: 2;
+    padding-bottom: 40px;
+    background: linear-gradient(transparent, #fff);
+  }
+  .btn-container{
+    margin: 5px 0;
+  }
+  .header button{
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .btn-dark{
+    padding: 7px 7px 7px 20px;
+    margin-bottom: 10px;
+  }
+  .btn-dark img{
+    width: 30px;
+    padding: 5px;
+    margin-left: 15px;
+  }
+  .btn-light img{
+    width: 12px;
+    margin-left: 5px;
+  }
+  .header h1{
+    font-size: 70px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+}
+.about-author {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-author h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-author p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.author-social-links a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+footer p {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
   .hero-section {
     height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/OIP.jpeg') no-repeat center center/cover;
